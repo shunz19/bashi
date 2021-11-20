@@ -51,6 +51,7 @@ body {
 }
 
 .ily {
+	font-family: "Times New Roman";
 	user-select: none;
 	display: flex;
 	flex-direction: column;
