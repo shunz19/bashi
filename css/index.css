@@ -1,0 +1,95 @@
+
+body {
+	text-align: justify;
+	font-family: monospace;
+	margin: 0;
+	background: black;
+}
+
+#view {
+	font-size: 12px;
+	line-height: 12px;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	background: url("../img/5.jpg");
+	background-size: 100% 100%;
+	-webkit-background-clip: text;
+	font-weight: bold;
+	color: transparent;
+}
+
+#view2 {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	opacity: 0.9;
+	transition: 0.2s;
+}
+
+#play {
+	width: 5%;
+	margin-top: 20px;
+	-webkit-filter: drop-shadow(0px 0px 0px black);
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+#play:hover {
+	-webkit-filter: drop-shadow(0px 0px 5px black);
+}
+
+#play:active {
+	opacity: 0.5;
+}
+
+.invert {
+  font-size: 0px;
+	width: 100%;
+	text-align: center;
+	filter: invert(1);
+}
+
+.ily {
+	user-select: none;
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	color: white;
+	font-family: white;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+}
+
+@keyframes blink {
+  0% {
+  	opacity: 1;
+  }
+  50% {
+  	opacity: 0.8;
+  }
+  100% {
+  	opacity: 1;
+  }
+}
+
+#ily {
+	font-size: 5vw;
+	letter-spacing: 0.25em;
+	transition: 0.5s;
+	animation-name: blink;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	text-shadow: 0px 0px 2em 0px white;
+}
+
+#ily:hover {
+	opacity: 1;
+	cursor: pointer;
+	text-shadow: 0px 0px 0.5em white;
+}
